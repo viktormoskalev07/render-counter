@@ -1,9 +1,8 @@
 import Link from "next/link";
 
 const nav =[
-    "redux"
-    , "context"
-    , "swrOnly"
+    "swr-in-child"
+
     ,"props"
 ]
 export const Header =()=>{

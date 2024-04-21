@@ -1,7 +1,10 @@
+import useSWR from "swr";
+import {fetcher} from "@/helpers";
 
 let render =0
-export  const Child2 = ({data})=>{
+export  const SwrChild3 = ()=>{
     render++
+    const { data  } = useSWR('/api/api2', fetcher)
     return <div className={"child"}>
         <br/>
         render: {render}

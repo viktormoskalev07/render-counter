@@ -27,3 +27,25 @@ body , html{
     margin: 0;
     height: 100%;
 }
+
+.box{
+    border: solid blue 1px ;
+    padding: 20px;
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+}
+
+.child{
+    border:solid red 1px;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+
+}
