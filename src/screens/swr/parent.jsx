@@ -14,11 +14,10 @@ export const SwrParent = ()=>{
         <br/>
         render:{render}
         <br/> <br/>
-        <div className="flex">
             <SwrChild1 />
             <SwrChild2 />
             <SwrChild3 />
             <SwrChild4/>
-        </div>
+
     </div>
 }

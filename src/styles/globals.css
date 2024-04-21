@@ -5,6 +5,7 @@ main{
     flex-grow: 1;
     padding: 20px;
     width: 100%;
+    min-height: 3000px;
 }
 
 header{
@@ -29,6 +30,7 @@ body , html{
 }
 
 .box{
+    width: 400px;
     border: solid blue 1px ;
     padding: 20px;
 
@@ -46,6 +48,6 @@ body , html{
     border:solid red 1px;
     padding: 10px;
     width: 200px;
-    height: 200px;
+    min-height: 80px;
 
 }

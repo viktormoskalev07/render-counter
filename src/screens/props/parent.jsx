@@ -16,13 +16,9 @@ export const PropsParent = ()=>{
         <br/>
         render:{render}
         <br/> <br/>
-        <div className="flex">
             <Child1 data={api1}/>
             <Child2 data={api1}/>
             <Child3 data={api2}/>
             <Child4 data1={api1} data2={api2}/>
-        </div>
-
-
     </div>
 }
