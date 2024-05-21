@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  line-height: 1.5;
+ min-width: 300px;
+  margin-right: 20px;
+}
+
+
+.item {
+  margin-bottom: 0;
+
+}
+
+
+.button {
+  background-color: rgba(65, 0, 56, 0.4);
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: none;
+}
+
+
+.title {
+  color: #b72455;
+  font-size: 30px;
+  margin: 0 0 20px 0;
+}
+
+
+.subTitle {
+  color: #171111;
+  font-size: 25px;
+  margin: 0 0 20px 0;
+}
+
+
+.counter {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  margin: 0 0 20px 0;
+}
+
+
+.text {
+  color: rgba(37, 38, 38, 0.6);
+  font-size: 23px;
+  margin: 0 0 20px 0;
+}

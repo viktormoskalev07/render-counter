@@ -1,4 +1,3 @@
- 
 import {SwrParent} from "@/screens/swr/parent";
 
 const Page = ()=>{
