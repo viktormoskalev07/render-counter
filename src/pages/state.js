@@ -18,7 +18,7 @@ const State = () => {
         <div className={styles.container}>
             <h2 className={styles.title}>State example</h2>
             <h3 className={styles.subTitle}>Parent Component</h3>
-            <p className={styles.text}>This component has been
+            <p className={styles.text}>Parent component has been
                 rendered {renderCountParent.current} {renderCountParent.current > 1 ? "times" : "time"}.</p>
             <StateChild1 counter={counter1} incrementCounter={incrementCounter1}/>
             <StateChild2 counter={counter2} incrementCounter={incrementCounter2}/>
