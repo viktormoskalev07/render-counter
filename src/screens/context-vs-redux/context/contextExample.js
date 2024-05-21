@@ -4,13 +4,6 @@ import ContextChild2 from "@/screens/context-vs-redux/context/contextChild2";
 import {CounterContext} from "@/provider/counter-provider";
 import styles from '../context-vs-redux.module.scss'
 const ContextExample = () => {
-    const context = useContext(CounterContext);
-
-    if (!context) {
-        return <div>Context is not available</div>;
-    }
-
-
     const renderCountRef = useRef(0);
     renderCountRef.current += 1;
 
