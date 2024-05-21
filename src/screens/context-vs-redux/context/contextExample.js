@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext, useRef} from 'react';
 import ContextChild1 from "@/screens/context-vs-redux/context/contextChild1";
 import ContextChild2 from "@/screens/context-vs-redux/context/contextChild2";
 import {CounterContext} from "@/provider/counter-provider";
@@ -10,15 +10,16 @@ const ContextExample = () => {
         return <div>Context is not available</div>;
     }
 
-    const { counter1, counter2, renderCountParent } = context;
+
+    const renderCountRef = useRef(0);
+    renderCountRef.current += 1;
+
     return (
         <div className={styles.container}>
             <h2 className={styles.title}>Context example</h2>
             <h3 className={styles.subTitle}>Parent Component</h3>
-            <p className={styles.counter}>Counter 1: {counter1}</p>
-            <p className={styles.counter}>Counter 2: {counter2}</p>
-            <p className={styles.text}>This component has been
-                rendered {renderCountParent.current} {renderCountParent.current > 1 ? "times" : "time"}.</p>
+            <p className={styles.text}>Parent сomponent has been
+                rendered {renderCountRef.current} {renderCountRef.current > 1 ? "times" : "time"}.</p>
             <ContextChild1 />
             <ContextChild2 />
         </div>

@@ -1,8 +1,6 @@
 const initialState = {
     counter1: 0,
     counter2: 0,
-    renderCount: 0,
-
 };
 
 const counterReducer = (state = initialState, action) => {
@@ -17,9 +15,6 @@ const counterReducer = (state = initialState, action) => {
                 ...state,
                 counter2: state.counter2 + 1
             };
-        case 'INCREMENT_RENDER_COUNT':
-            return { ...state,
-                renderCount: state.renderCount + 1 };
         default:
             return state;
     }
