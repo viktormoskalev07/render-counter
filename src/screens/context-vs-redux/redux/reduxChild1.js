@@ -12,9 +12,9 @@ const ReduxChild1 = () => {
     renderCount.current += 1;
 
     return (
-        <div>
-            <h2>Child Component 1</h2>
-            <p>Counter 1: {counter1}</p>
+        <div className={styles.item}>
+            <h2 className={styles.subTitle}>Child Component 1</h2>
+            <p className={styles.text}>Counter 1: {counter1}</p>
             <button className={styles.button} onClick={() => dispatch(incrementCounter1())}>Counter 1</button>
             <p className={styles.text}>This component has been
                 rendered {renderCount.current} {renderCount.current > 1 ? "times" : "time"}</p>

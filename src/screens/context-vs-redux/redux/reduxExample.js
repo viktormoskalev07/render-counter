@@ -8,9 +8,9 @@ import {incrementRenderCount} from "@/features/counter/counter";
 const ReduxExample = () => {
     const counter1 = useSelector(state => state.counter.counter1);
     const counter2 = useSelector(state => state.counter.counter2);
+    const renderCount = useSelector(state => state.counter.renderCount);
     const dispatch = useDispatch();
 
-    const renderCount = useSelector(state => state.counter.renderCount);
 
     useEffect(() => {
         dispatch(incrementRenderCount());
@@ -24,6 +24,7 @@ const ReduxExample = () => {
             <p className={styles.counter}>Counter 2: {counter2}</p>
             <p className={styles.text}>This component has been
                 rendered {renderCount} {renderCount > 1 ? "times" : "time"}.</p>
+
             <ReduxChild1/>
             <ReduxChild2/>
         </div>

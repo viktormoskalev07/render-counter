@@ -18,7 +18,8 @@ const ContextChild1 = ({style}) => {
             <h2 className={styles.subTitle}>Child Component 1</h2>
             <p className={styles.counter}>Counter 1: {counter1}</p>
             <button className={styles.button} onClick={() => setCounter1(counter1 + 1)}>Counter 1</button>
-            <p className={styles.text}>This component has been rendered {renderCount.current} times.</p>
+            <p className={styles.text}>This component has been
+                rendered {renderCount.current} {renderCount.current > 1 ? "times" : "time"}</p>
         </div>
     );
 };

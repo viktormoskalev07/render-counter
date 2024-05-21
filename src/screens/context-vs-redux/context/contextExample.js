@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
-import ContextChild1 from "@/screens/context-vs-redux/context/context-child1";
-import ContextChild2 from "@/screens/context-vs-redux/context/context-child2";
+import ContextChild1 from "@/screens/context-vs-redux/context/contextChild1";
+import ContextChild2 from "@/screens/context-vs-redux/context/contextChild2";
 import {CounterContext} from "@/provider/counter-provider";
 import styles from '../context-vs-redux.module.scss'
 const ContextExample = () => {
