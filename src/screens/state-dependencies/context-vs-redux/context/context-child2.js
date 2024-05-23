@@ -1,6 +1,6 @@
 import React, { useContext, useRef } from 'react';
 import { CounterContext } from "@/provider/counter-provider";
-import styles from '../context-vs-redux.module.scss'
+import styles from '../../state-dependencies.module.scss'
 const ContextChild2 = ({style}) => {
     const context = useContext(CounterContext);
 

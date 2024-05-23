@@ -1,7 +1,7 @@
 import React, {useRef} from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import {incrementCounter2} from "@/features/counter/counter";
-import styles from "@/screens/context-vs-redux/context-vs-redux.module.scss";
+import styles from "@/screens/state-dependencies/state-dependencies.module.scss";
 
 const ReduxChild2 = () => {
     const counter2 = useSelector(state => state.counter.counter2);
@@ -11,7 +11,7 @@ const ReduxChild2 = () => {
     renderCount.current += 1;
 
     return (
-        <div>
+        <div className={styles.item}>
             <h2>Child Component 2</h2>
             <p>Counter 2: {counter2}</p>
             <button className={styles.button} onClick={() => dispatch(incrementCounter2())}>Counter 2</button>

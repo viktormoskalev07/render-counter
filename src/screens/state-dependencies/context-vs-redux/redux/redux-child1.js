@@ -1,7 +1,7 @@
 import React, {useRef} from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import {incrementCounter1} from "@/features/counter/counter";
-import styles from "@/screens/context-vs-redux/context-vs-redux.module.scss";
+import styles from "@/screens/state-dependencies/state-dependencies.module.scss";
 
 
 const ReduxChild1 = () => {

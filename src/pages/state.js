@@ -1,7 +1,7 @@
 import React, {useRef, useState} from 'react';
-import StateChild2 from "@/screens/state/stateChild2";
-import StateChild1 from "@/screens/state/stateChild1";
-import styles from "@/screens/context-vs-redux/context-vs-redux.module.scss";
+import StateChild2 from "@/screens/state-dependencies/state/state-child2";
+import StateChild1 from "@/screens/state-dependencies/state/state-child1";
+import styles from "@/screens/state-dependencies/state-dependencies.module.scss";
 
 const State = () => {
     const [counter1, setCounter1] = useState(0);

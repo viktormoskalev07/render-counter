@@ -1,9 +1,10 @@
 import React, {useRef} from 'react';
-import styles from '../context-vs-redux/context-vs-redux.module.scss'
+import styles from '@/screens/state-dependencies/state-dependencies.module.scss'
 
 const StateChild1 = ({incrementCounter, counter}) => {
     const renderCount = useRef(0);
     renderCount.current += 1;
+
     return (
         <div className={styles.item}>
             <h2 className={styles.subTitle}>Child Component 1</h2>

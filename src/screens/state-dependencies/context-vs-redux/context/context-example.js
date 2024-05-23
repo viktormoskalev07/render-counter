@@ -1,8 +1,8 @@
 import React, {useContext, useRef} from 'react';
-import ContextChild1 from "@/screens/context-vs-redux/context/contextChild1";
-import ContextChild2 from "@/screens/context-vs-redux/context/contextChild2";
+import ContextChild1 from "@/screens/state-dependencies/context-vs-redux/context/context-child1";
+import ContextChild2 from "@/screens/state-dependencies/context-vs-redux/context/context-child2";
 import {CounterContext} from "@/provider/counter-provider";
-import styles from '../context-vs-redux.module.scss'
+import styles from '../../state-dependencies.module.scss'
 const ContextExample = () => {
     const renderCountRef = useRef(0);
     renderCountRef.current += 1;

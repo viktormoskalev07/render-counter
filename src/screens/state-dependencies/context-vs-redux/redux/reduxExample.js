@@ -1,7 +1,7 @@
 import React, {useRef} from 'react';
-import ReduxChild1 from "@/screens/context-vs-redux/redux/reduxChild1";
-import ReduxChild2 from "@/screens/context-vs-redux/redux/reduxChild2";
-import styles from '../context-vs-redux.module.scss';
+import ReduxChild1 from "@/screens/state-dependencies/context-vs-redux/redux/redux-child1";
+import ReduxChild2 from "@/screens/state-dependencies/context-vs-redux/redux/redux-child2";
+import styles from '../../state-dependencies.module.scss';
 
 const ReduxExample = () => {
     const renderCountRef = useRef(0);

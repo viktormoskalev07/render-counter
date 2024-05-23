@@ -1,5 +1,5 @@
 import React, {useRef} from 'react';
-import styles from "@/screens/context-vs-redux/context-vs-redux.module.scss";
+import styles from "@/screens/state-dependencies/state-dependencies.module.scss";
 
 const StateChild2 = ({counter, incrementCounter}) => {
     const renderCount = useRef(0);

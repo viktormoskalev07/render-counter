@@ -5,7 +5,9 @@ const nav =[
 
     ,"props",
     "context-vs-redux",
-    "state"
+    "state",
+    "own-children-state",
+    "dependent-state",
 ]
 export const Header =()=>{
 
